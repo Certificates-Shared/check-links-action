@@ -1,0 +1,10 @@
+name: 'Check Markdown Links'
+description: 'Checks broken links and anchors in markdown files'
+inputs:
+  directory:
+    description: 'The directory containing the markdown files to check'
+    required: false
+    default: './content'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

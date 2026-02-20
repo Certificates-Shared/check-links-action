@@ -1,0 +1,19 @@
+{
+    "name": "check-links-action",
+    "version": "1.0.0",
+    "description": "A GitHub Action to check broken links in Markdown files",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "ncc build index.js --license licenses.txt",
+        "test": "node dist/index.js"
+    },
+    "dependencies": {
+        "@actions/core": "^1.10.1",
+        "@actions/github": "^6.0.0",
+        "cheerio": "^1.0.0-rc.12",
+        "undici": "^6.6.2"
+    },
+    "devDependencies": {
+        "@vercel/ncc": "^0.38.1"
+    }
+}
