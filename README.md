@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check links
-        uses: Angular-Certification/check-links-action@main
+        uses: Certificates-Shared/check-links-action@main
         with:
           directory: './content'
 ```
